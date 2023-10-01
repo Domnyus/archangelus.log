@@ -137,7 +137,7 @@ a.menu_item
     margin: auto 1vw;
 }
 
-h5.title
+h5.title, h3.title, h6.title
 {
     text-align: center;
     margin: .5vw 0;
@@ -146,4 +146,19 @@ h5.title
 hr
 {
     margin: 1vw 0;
+}
+
+h6.date
+{
+    color: #797979;
+    text-align: right;
+}
+
+p.fixed_content
+{
+    font-size: .75rem;
+}
+
+p{
+    word-wrap: break-word;
 }
