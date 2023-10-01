@@ -1,0 +1,149 @@
+body
+{
+    background-color: #f0f0f0;
+}
+
+#sign_up, #log_in
+{
+    width: 60%;
+}
+
+#menu
+{
+    background-color: #2976c4;
+}
+
+a.menu
+{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+button.nav_button, input.nav_button
+{
+    border: none;
+    border-radius: 20px;
+    padding: .5vw;
+    margin: 0 .5vw;
+    min-width: 100px;
+}
+
+button.body_button, input.body_button
+{
+    background-color: #2976c4 !important;
+    color: #f0f0f0;
+    margin-top: 2vw;
+    padding: .5vw;
+}
+
+.cards
+{
+    border: none;
+    border-radius: 20px;
+    padding: 2vw;
+    margin-top: 2vw;
+    background-color: #fff;
+}
+
+input, label .card-field
+{
+    margin: 1vw 0;
+}
+
+a.to_close
+{
+    color: #f0f0f0;
+    text-decoration: none;
+    background-color: #c42929;
+    text-align: center;
+    margin-bottom: .25vw;
+    padding: .25vw;
+    border-radius: 10px;
+    max-height: 35px;
+}
+
+.p_err
+{
+    color: #c42929 !important;
+}
+
+h6,h4
+{
+    text-align: center;
+    margin-top: 1vw;
+}
+
+input.yes
+{
+    background-color: #3ec429;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.technology-item
+{
+    margin: .5vw 0;
+}
+
+div.welcome
+{
+    margin: 2vw 0;
+    padding: .5vw 0;
+}
+
+div.calendar
+{
+    text-align: center;
+}
+
+div.green
+{
+    color: #f0f0f0;
+    background-color: #3ec429;
+}
+
+div.red
+{
+    color: #f0f0f0;
+    background-color: #c42929;
+}
+
+input.green
+{
+    color: #f0f0f0;
+    background-color: #3ec429 !important;
+    margin: 0 !important;
+}
+
+input.red
+{
+    color: #f0f0f0;
+    background-color: #c42929 !important;
+    margin: 0 !important;
+}
+
+h1.title
+{
+    text-align: center;
+    margin-top: 1vw;
+}
+
+a.menu_item
+{
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: auto 1vw;
+}
+
+h5.title
+{
+    text-align: center;
+    margin: .5vw 0;
+}
+
+hr
+{
+    margin: 1vw 0;
+}
