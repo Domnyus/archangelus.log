@@ -5,4 +5,4 @@ Or how boring is to have .txt files or spreadsheet tracking your study?
 
 Meet Archangelus.log, where you can simply login, type yes and quit. Not only this, but you can check the days what you learn. Give it a try!
 
-Hosted at: www.archangeluslog.com/index.php
+Hosted at: https://archangeluslog.com/
