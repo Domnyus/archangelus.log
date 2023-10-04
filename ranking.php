@@ -65,7 +65,7 @@ include("./_request.php");
                                     <ol>
                                         <?php
                                         try {
-                                            $result = $conn->prepare("select distinct(users.username), count(day(today.day)) as times from users join user_branch on user_branch.user = users.id inner join today on today.user_branch = user_branch.id where month(current_timestamp())-month(today.day) < 1 group by users.id order by times desc limit 10;");
+                                            $result = $conn->prepare("select count(distinct(day(day))) as times,username from today join user_branch on user_branch.id = today.user_branch inner join users on user_branch.user = users.id where month(current_timestamp())-month(today.day) < 1 group by username order by times desc limit 10;");
                                             $result->execute();
 
                                             foreach ($result->fetchAll() as $row) {
@@ -97,7 +97,7 @@ include("./_request.php");
                                     <ol>
                                         <?php
                                         try {
-                                            $result = $conn->prepare("select distinct(users.username), count(day(today.day)) as times from users join user_branch on user_branch.user = users.id inner join today on today.user_branch = user_branch.id where year(current_timestamp())-year(today.day) < 1 group by users.id order by times desc limit 10;");
+                                            $result = $conn->prepare("select count(distinct(day(day))) as times,username from today join user_branch on user_branch.id = today.user_branch inner join users on user_branch.user = users.id where year(current_timestamp())-year(today.day) < 1 group by username order by times desc limit 10;");
                                             $result->execute();
 
                                             foreach ($result->fetchAll() as $row) {
@@ -129,7 +129,7 @@ include("./_request.php");
                                     <ol>
                                         <?php
                                         try {
-                                            $result = $conn->prepare("select distinct(users.username), count(day(today.day)) as times from users join user_branch on user_branch.user = users.id inner join today on today.user_branch = user_branch.id group by users.id order by times desc limit 10;");
+                                            $result = $conn->prepare("select count(distinct(day(day))) as times,username from today join user_branch on user_branch.id = today.user_branch inner join users on user_branch.user = users.id group by username order by times desc limit 10;");
                                             $result->execute();
 
                                             foreach ($result->fetchAll() as $row) {
