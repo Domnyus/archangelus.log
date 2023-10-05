@@ -1,9 +1,9 @@
 <?php
-    include("./_request.php");
+include("./_request.php");
 ?>
 <?php
-    if(!isset($_SESSION["user"]))
-        header("location: index");
+if (!isset($_SESSION["user"]))
+    header("location: index");
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,17 @@
 
 <body>
 
-<?php include("./view/header.php"); ?>
+    <?php include("./view/header.php"); ?>
 
     <main>
         <div class="container-fluid">
             <div class="row">
+                <div class="col-12">
+                    <?php include("./view/sign_up.php"); ?>
+                </div>
+                <div class="col-12">
+                    <?php include("./view/log_in.php"); ?>
+                </div>
                 <div class="col-md-6 offset-md-3 col-12">
                     <div class="row">
                         <div class="col-12">
@@ -46,7 +52,7 @@
             </div>
         </div>
     </main>
-    
+
     <script src="./sources/js/bootstrap.js"></script>
 </body>
 

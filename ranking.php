@@ -24,6 +24,12 @@ include("./_request.php");
     <main>
         <div class="container-fluid">
             <div class="row">
+                <div class="col-12">
+                    <?php include("./view/sign_up.php"); ?>
+                </div>
+                <div class="col-12">
+                    <?php include("./view/log_in.php"); ?>
+                </div>
                 <div class="col-12 col-md-6 offset-md-3">
                     <div class="row">
 
